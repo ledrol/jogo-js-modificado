@@ -78,6 +78,15 @@ function iniciarJogo(){
     }
 
     snake.unshift(newHead); //método unshift adiciona como primeiro quadradinho da cobrinha
+
+    var cont = snake.length; //Pega o tamanho do vetor
+    document.getElementById('foodVal').innerHTML = cont-1; //Subtrai 1 para gerar o número de pontos
 }
 
-let jogo = setInterval(iniciarJogo, 100);
+
+function mostraVeloc(){
+    let x = document.getElementById('velo').value;
+    document.getElementById('valor').innerHTML = x;
+}
+var veloc = parseInt(document.getElementById('velo').value); 
+var jogo = setInterval(iniciarJogo, 100); //Ainda não funciona ao substituir 100 por veloc para permitir a alteração da velocidade
