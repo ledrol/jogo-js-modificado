@@ -13,7 +13,7 @@
     <canvas id="snake" width="512" height="512"></canvas>
     <form>
         <label for="velo">Velocidade</label>
-        <input type="range" id="velo" name="velo" min="10" max="500" step="10" onmousemove="mostraVeloc()" >
+        <input type="range" id="velo" name="velo" min="10" max="500" step="10" onmousemove="mostraVeloc()" onmouseup="window.location.reload()" >
         <span id="valor"></span>
     </form>
     <p class="npontos">Número de pontos:</p>
